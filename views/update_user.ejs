@@ -1,0 +1,57 @@
+
+<%-include("partials/header.ejs")%>
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+           <div class="filter">
+                <a href="/all_user">
+                    <i class="fa-solid fa-angles-left"></i>
+                    All users</a>
+           </div>
+        </div>
+
+        <div class="new">
+            <h2>Update User</h2>
+            <span class="account">Use the below form to create a new account</span>
+        </div>
+
+        <form id="update_user"  class="add_user" action="/" method="POST">
+            <div class="new_user">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="hidden" name="id" value="<%=user[0]._id%>">
+                    <input type="text" value="<%=user[0].name%>" class="detail" name="name" placeholder="Marks Stienis">
+                </div>
+                <div>
+                    <label for="name">Email</label>
+                    <input type="text" value="<%=user[0].email%>"  class="detail"  placeholder="email@gmail.com" name="email">
+                </div>
+                <div>
+                    <label for="gen">Gender</label>
+                     <input type="radio"  value="female"  name="gender" 
+                     <%= user[0].gender == 'female' ? 'checked' : '' %>>
+                     <span class="radio">Female</span>
+                     <input type="radio" value="male" name="gender"
+                     <%= user[0].gender =='male' ? 'checked' : '' %>>
+                     <span class="radio">Male</span>
+                </div>
+                <div>
+                    <label for="gen">Status</label>
+                     <input type="radio" value="active"
+                      <%= user[0].status == 'active' ? 'checked' : '' %> style="margin-left: 38px;" name="status">
+                     <span class="radio ">Active</span>
+
+                     <input type="radio" value="inactive" 
+                     <%= user[0].status == 'inactive' ? "checked" : '' %> style="margin-left: 38px;" style="margin-left: 10px;" name="status">
+                     <span class="radio">Inactive</span>
+                </div>
+                <div>
+                    <button type="submit"> Save </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+
+<%-include("partials/footer.ejs")%>

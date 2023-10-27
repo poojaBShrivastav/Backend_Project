@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap');
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.text-center{
+    text-align: center;
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
+    font-size: 25px;
+    padding: 20px 0px;
+    background-color: greenyellow;
+}
+.border{
+    margin-left: 280px;
+   /* padding-top: 50px; */
+   color:black;
+   border:solid black 1px;
+   padding: 7px;
+ 
+}
+table{
+   
+    margin: auto;
+    margin-top: 20px;
+    width:800px
+}
+td{
+    text-align: center;
+    padding: 5px;
+}
+th{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.btn{
+    color:black;
+    margin: 10px;
+   
+}
+.filter{
+    margin-left: 280px;
+   
+}
+a{
+    color:black;
+}
+.new{
+    text-align: center;
+    margin-top: 20px;
+}
+.account,label,span{
+    color:grey
+}
+.detail{
+    display: block;
+    width:600px;
+    height: 20px;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: solid grey 1px;
+    border-radius: 5px;
+}
+button{
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;        
+}
+
+input[type=radio]{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: black;
+    color:white;
+    
+}
+form{
+    /* margin-left: 0px; */
+    margin-top: 40px;
+}
+.add_user{
+    margin-left: 400px;
+}
+
